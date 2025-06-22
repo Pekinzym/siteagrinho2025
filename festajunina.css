@@ -1,0 +1,107 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte e corpo */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #FFF8E1;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #FF9800;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  animation: slideInDown 1s forwards;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Main */
+main {
+  padding: 40px 10%;
+  text-align: center;
+  animation: fadeIn 1.5s ease-out 0.5s forwards;
+}
+
+/* Seções */
+main h2, h3 {
+  color: #E65100;
+  margin-top: 30px;
+  font-size: 2rem;
+}
+
+main p {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 15px 0;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+/* Botão "Voltar ao início" */
+.saiba-mais {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 25px;
+  background-color: #FFB74D;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.saiba-mais:hover {
+  background-color: #F57C00;
+}
+
+/* Footer */
+footer {
+  background-color: #E65100;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  animation: fadeIn 1.5s ease-out 1.5s forwards;
+}
+
+/* Animações */
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
